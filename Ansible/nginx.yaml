@@ -1,11 +1,11 @@
 - name: package installation
   host: web
   task:
-   -name: ngnix installation
+   - name: ngnix installation
       ansible.builtin.package:
         name: nginx
         state: present
--name: run ngnix service
+   - name: run ngnix service
       ansible.builtin.service:
         name: nginx
         state: started
