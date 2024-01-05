@@ -1,0 +1,8 @@
+- name: package installation
+  host: web
+  task:
+   -name: ngnix installation
+    ansible.builtin.package:
+    
+
+    
