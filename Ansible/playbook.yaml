@@ -5,7 +5,7 @@
     ansible.builtin.ping:
 
 - name: ping playbook
-  hosts: web
+  hosts: prod
   tasks:
   - name: ping the server
     ansible.builtin.ping:
