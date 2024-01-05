@@ -1,14 +1,14 @@
 - name: package installation
-  host: web
-  task:
+  hosts: web
+  tasks:
    - name: ngnix installation
-      ansible.builtin.package:
-        name: nginx
-        state: present
+     ansible.builtin.package:
+      name: nginx
+      state: present
    - name: run ngnix service
-      ansible.builtin.service:
-        name: nginx
-        state: started
+     ansible.builtin.service:
+      name: nginx
+      state: started
 
 
     
