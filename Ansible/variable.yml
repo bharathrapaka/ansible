@@ -1,0 +1,11 @@
+- name: variables
+  hosts: localhosts
+  vars:
+    NAME: "BHARATH RAPAKA"
+    COURSE: "DEVOPS"
+    DESIGNATION: "DEVOPS ENGINEER"
+  tasks:
+   ansible.builtin.debug:
+    - name: adding variables
+      msgs: "helo this is {{NAME}}, practing {{COURSE}} and become {{DESIGNATION}}"
+      
