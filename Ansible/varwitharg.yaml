@@ -3,6 +3,6 @@
   tasks:
   - name: check varaibles with arguments
     ansible.builtin.debug:
-     msg: "this is {{COURSE}}, from {{TRAINER}}"
+     msg: "Hi {{person}}, Good {{wishes}}"
 
     
