@@ -20,7 +20,4 @@
       name: roboshop
     when: userexist_ouput.rc != 0
 
-  - name: user status
-    ansible.builtin.debug:
-     msg: "status of: {{userexist_output}}"
 
