@@ -1,0 +1,24 @@
+- name: condition with useradd
+  hosts: localhost
+  tasks:
+  - name: check roboshop is exist or not
+    ansible.builtin.command: id roboshop
+    register: userexist_output
+    
+  - name: print variable output
+    ansible.builtin.debug:
+      msg: "variable output of userid is : {{userexist_output}}"
+
+  - name: print exit status or return code
+    ansible.builtin.debug:
+      msg: "status of: {{userexist_output.rc}}"
+
+  - name: create user
+    ansible.builtin.user:
+      name: roboshop
+      when: userexist_ouput.rc != 0
+
+  - name: user status
+    ansible.builtin.debug:
+     msg: "status of: {{userexist_output}}"
+
