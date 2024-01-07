@@ -1,5 +1,10 @@
 - name: variable with prompt
   hosts: localhost
+  vars:
+    NAME: "BHARATH RAPAKA"
+    COURSE: "DEVOPS"
+    DESIGNATION: "DEVOPS ENGINEER"
+    
   vars_prompt:
     - name: prompting username
       prompt: "please enter username"
