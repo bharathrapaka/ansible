@@ -3,5 +3,5 @@
    tasks:
     - name: check varaibles
       ansible.builtin.debug:
-      msg: "this is a course from {{COURSE}} and trainer is {{TRAINER}}"
+        msg: "this is a course from {{COURSE}} and trainer is {{TRAINER}}"
 
