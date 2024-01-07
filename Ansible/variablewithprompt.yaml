@@ -8,6 +8,6 @@
       prompt: "please enter password"
       private: true
   tasks:
-    - name: print and chcek the values
+   - name: print and chcek the values
       ansible.builtin.debug:
-        msgs: "username is {{USERNAME}}, password is {{PASSWORD}}"
+        msg: "username is {{USERNAME}}, password is {{PASSWORD}}"
