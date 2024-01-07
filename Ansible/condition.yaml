@@ -9,11 +9,11 @@
 
   - name: print variable
     ansible.builtin.debug:
-      msg: "user ouput {{user_output}}"
+     msg: "user ouput {{user_output}}"
 
   - name: print exit status or return code
     ansible.builtin.debug:
-      msg: "status is: {{user.rc}}"
+     msg: "status is: {{user.rc}}"
   
   - name: create user
     ansible.builtin.user:
