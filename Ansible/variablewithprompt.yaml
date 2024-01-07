@@ -1,10 +1,10 @@
 - name: variable with prompt
   hosts: localhost
   vars_prompt:
-    - name: prompting username
+    - name: USERNAME
       prompt: "please enter username"
       private: false
-    - name: prompting password
+    - name: PASSWORD
       prompt: "please enter password"
       private: true
   tasks:
