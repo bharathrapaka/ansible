@@ -18,7 +18,7 @@
   - name: create user
     ansible.builtin.user:
       name: roboshop
-      when: userexist_ouput.rc != 0
+    when: userexist_ouput.rc != 0
 
   - name: user status
     ansible.builtin.debug:
