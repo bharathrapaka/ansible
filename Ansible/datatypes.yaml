@@ -1,0 +1,31 @@
+- name: datatypes
+  hosts: localhost
+   vars:
+    NAME: bharath rapaka
+    skills:
+    - devops
+    - aws
+    - shell 
+    - ansible
+    - Linux
+    Experience:
+      devops: 4
+      aws: 2
+      Linux: 4
+    Trainer: true
+    
+    tasks:
+    - name: print key value pair 
+      ansible.builtin.debug:
+       msg: "name: {{name}}"
+    - name: print list 
+      ansible.builtin.debug:
+       msg: "skills: {{skills}}"
+    - name: print map 
+      ansible.builtin.debug:
+       msg: "Experience: {{Experience}}"
+     name: print boolean 
+      ansible.builtin.debug:
+       msg: "is he Trainer: {{Trainer}}"
+
+
