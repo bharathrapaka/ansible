@@ -6,15 +6,15 @@
     register: user_output
 
   - name: print variable
-    ansible.built.debug:
+    ansible.builtin.debug:
       msg: "user ouput {{user_output}}"
 
   - name: print exit status or return code
-    ansible.built.debug:
+    ansible.builtin.debug:
       msg: "status is: {{user.rc}}"
   
   - name: create user
-    ansible.built.user:
+    ansible.builtin.user:
       name: roboshop
     when: user.rc != 0 
 
