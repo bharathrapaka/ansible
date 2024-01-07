@@ -3,7 +3,6 @@
   vars_files:
     - var
   tasks:
-- name: check varaibles
-  ansible.builtin.debug:
-    msg:"Hi, i am learning {{COURSE}}, and trainer is {{TRAINER}} for DESIGNATIN {{DESIGNATION}}"
-    
+  - name: check varaibles
+  ` ansible.builtin.debug:
+      msg:"Hi, i am learning {{COURSE}}, and trainer is {{TRAINER}} for DESIGNATIN {{DESIGNATION}}"
