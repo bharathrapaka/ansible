@@ -1,4 +1,3 @@
-- name: variable with prompt
 - name: variablewithprompt
   hosts: localhost
   vars_prompt:
@@ -12,4 +11,3 @@
   - name: print and check the value
     ansible.builtin.debug:
      msg: "username is {{admin}} and password is {{admin}}"
-     
