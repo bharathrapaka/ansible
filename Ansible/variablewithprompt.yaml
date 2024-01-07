@@ -9,5 +9,5 @@
       private: true
   tasks:
    - name: print and chcek the values
-      ansible.builtin.debug:
-        msg: "username is {{USERNAME}}, password is {{PASSWORD}}"
+     ansible.builtin.debug:
+      msg: "username is {{USERNAME}}, password is {{PASSWORD}}"
