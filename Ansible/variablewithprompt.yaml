@@ -10,4 +10,4 @@
   tasks:
     - name: print and chcek the values
       ansible.builtin.debug:
-        msg: "username is {{USERNAME}}, password is {{PASSWORD}}"
+        msgs: "username is {{USERNAME}}, password is {{PASSWORD}}"
