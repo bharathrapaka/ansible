@@ -1,8 +1,8 @@
 - name: variables with arguments
   hosts: localhost
   tasks:
-   - name: check varaibles with arguments
-     ansible.builtin.debug:
-      msg: "this is {{COURSE}}, from {{TRAINER}}"
+  - name: check varaibles with arguments
+    ansible.builtin.debug:
+     msg: "this is {{COURSE}}, from {{TRAINER}}"
 
     
