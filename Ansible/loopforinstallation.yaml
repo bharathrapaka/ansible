@@ -1,0 +1,12 @@
+- name: loopforinstallation
+  hosts: localhost
+  tasks:
+  - name: package installation
+    ansible.builtin.package:
+      name: "{{items}}"
+      state: present
+
+    loop:
+    - git
+    - gcc
+    - make
