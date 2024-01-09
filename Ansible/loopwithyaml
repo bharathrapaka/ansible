@@ -9,4 +9,4 @@
     - {name: 'git', state: 'present'}
     - {name: 'telnet', state: 'absent'}
     - {name: 'make', state: 'present'}
-      msg: print "{{name}},{{state}}"
+      msg: "print {{name}},{{state}}"
