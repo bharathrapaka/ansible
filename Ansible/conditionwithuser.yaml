@@ -17,7 +17,7 @@
 
   - name: create user
     ansible.builtin.user:
-     name: roboshop
-    when: userexist_ouput.rc != 0
+      name: roboshop
+    when: userexist_output.rc != 0 #condition
 
 
