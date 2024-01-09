@@ -1,5 +1,6 @@
 - name: loopforinstallation
   hosts: localhost
+  become: yes
   tasks:
   - name: package installation
     ansible.builtin.package:
