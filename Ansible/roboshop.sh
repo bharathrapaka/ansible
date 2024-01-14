@@ -1,7 +1,7 @@
 #!/bin/bash
 
 AMI=ami-01faf8de678b6d856
-SG_ID= sg-0b677afd1b217e8ef #replace with your SG ID
+SG_ID=sg-0b677afd1b217e8ef #replace with your SG ID
 INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
 ZONE_ID=Z07187862EB134EMJD6GR # replace your zone ID
 DOMAIN_NAME="bpix.online"
